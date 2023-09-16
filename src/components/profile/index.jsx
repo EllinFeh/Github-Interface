@@ -9,16 +9,16 @@ const Profile = () => {
                 <S.WrapperBackground>
                     <S.Wrapper>
 
-                        <S.WrapperAvatar src="https://avatars.githubusercontent.com/u/88490490?v=4" alt="avataruser" />
+                        <S.WrapperGithub src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="avataruser" />
 
-
-                        <div>
+                           <div>
+                                <S.WrapperAvatar src="https://avatars.githubusercontent.com/u/88490490?v=4" alt="avataruser" />
+                            </div>
+                      
+                        <S.WrapperH1>
                             <h1>Elison Felipe</h1>
-                            <S.WrapperUsername>
-                                <h3>Username:</h3>
-                                <span>EllinFeh</span>
-                            </S.WrapperUsername>
-
+                            <h5>Username: EllinFeh</h5>
+                        </S.WrapperH1>
 
                             <S.WrapperStatusCount>
                                 <div>
@@ -36,8 +36,6 @@ const Profile = () => {
                                     <span>8</span>
                                 </div>
                             </S.WrapperStatusCount>
-
-                        </div>
 
 
                     </S.Wrapper >

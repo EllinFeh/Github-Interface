@@ -17,7 +17,7 @@ const Profile = () => {
 
                         <div>
                             <h1>Elison Felipe</h1>
-                            <h5>Username: EllinFeh</h5>
+                            <h5>Github: EllinFeh</h5>
                         </div>
 
                         <S.WrapperStatusCount>

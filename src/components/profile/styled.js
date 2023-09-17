@@ -10,14 +10,14 @@ color: #ffffff;
 gap: 25px;
 
 h1{
-  font-size: 20px;
+  font-size: 22px;
 display: block;
 font-family: arial;
 font-weight: bold;
 }
 
 h5{
-  font-size: 14px;
+  font-size: 12px;
 }
 `;
 

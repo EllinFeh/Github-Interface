@@ -39,6 +39,10 @@ html {
 body {
   background: #111111;
   margin: 0;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  user-select: none;
+
 }
 
 

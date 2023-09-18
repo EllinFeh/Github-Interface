@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './styled';
+import RepositoryItem from '../repositories-itens';
 
 function Repositories() {
   return (
@@ -22,8 +23,20 @@ function Repositories() {
 
       </S.WrapperTabList>
 
-      <S.WrapperTabPanel>Panel Repositories</S.WrapperTabPanel>
-      <S.WrapperTabPanel>Panel Starred</S.WrapperTabPanel>
+      <S.WrapperTabPanel>
+        <RepositoryItem 
+        name="repo1"
+        linkrepo="/"
+        fullname="ellinfeh/cyberquest"
+         />
+      </S.WrapperTabPanel>
+
+      <S.WrapperTabPanel>
+        <RepositoryItem 
+        name="repo2"
+        linkrepo="/"
+        fullname="ellinfeh/solar"/>
+      </S.WrapperTabPanel>
 
 
     </S.WrapperTabs>

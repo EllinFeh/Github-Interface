@@ -1,7 +1,11 @@
 import React from 'react'
 import * as S from './styled'
+import UseGithub from '../../hooks/githubHooks'
+
 
 const Profile = () => {
+    const { githubState } = UseGithub()
+
     return (
 
         <div>
@@ -16,7 +20,7 @@ const Profile = () => {
                         </div>
 
                         <div>
-                            <h1>Elison Felipe</h1>
+                            <h1>{githubState.user.name}</h1>
                             <h5>Github: EllinFeh</h5>
                         </div>
 
@@ -27,12 +31,17 @@ const Profile = () => {
                             </div>
 
                             <div>
-                                <h4>Starred</h4>
+                                <h4>Followings</h4>
                                 <span>21</span>
                             </div>
 
                             <div>
-                                <h4>Followings</h4>
+                                <h4>Gists</h4>
+                                <span>8</span>
+                            </div>
+
+                            <div>
+                                <h4>Repos</h4>
                                 <span>8</span>
                             </div>
                         </S.WrapperStatusCount>

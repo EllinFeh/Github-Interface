@@ -20,6 +20,15 @@ cursor: pointer;
     transform: skew(-5deg);
     transition: 500ms;
 }
+
+&:focus{
+    outline:none;
+}
+
+&:is-selected{
+    border: 2px solid #ffffff;
+    transform: scale(1.2);
+}
 `;
 
 export const WrapperTabList = styled(TabList)`
@@ -29,11 +38,25 @@ align-items: center;
 justify-content: center;
 gap: 3%;
 
+&:is-selected{  
+    border: 2px solid;
+    display:block;
+    color: #111111;
+}  
+
 `;
 
+WrapperTabList.tabsRole = "Tab";
+
 export const WrapperTabPanel = styled(TabPanel)`
+display:none;
 margin: 5% 10% 0% 10%;
 border-radius: 10px;
 text-align: center;
 
+&.is-selected {
+    display: block;
+
+}
 `;
+WrapperTabList.tabsRole = "TabPanel";

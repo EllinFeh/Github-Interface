@@ -89,9 +89,7 @@ const GithubProvider = ({ children }) => {
 
   const contextValue = {
     githubState,
-    getUser: useCallback((username) => getUser(username), []),
-    getUserRepos: useCallback((username) => getUserRepos(username), []),
-    getUserStarred: useCallback((username) => getUserStarred(username), []),
+    
   };
 
   return (

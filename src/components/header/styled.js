@@ -16,29 +16,36 @@ export const Wrapper = styled.div`
 }
 
   input {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
-    height: 44px;
-    padding: 8px;
-    font-weight: 500;
-    margin: 0px 5px 0px 5px;]
+    border: 1.8px solid white; 
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 
-    
+    height: 35px;
+    width: 130px;
+    padding: 0px 10px 0px 10px;
+    font-weight: italic;
+    margin: 0px 2px 0px 0px;
   }
 
   button {
     background: none;
-    padding: 9px 16px;
-    margin: 0 2px;
-    border: 1.8px solid white;
-    border-radius: 10px;
+    margin: 0 -3px;
+    height: 35px;
+    padding: 4px;
 
-    &:hover {
-      background: linear-gradient(10deg, rgba(6,29,59,0.5) 0%, rgba(48,74,159,1) 50%, rgba(74,60,190,0.5) 100%);
-      box-shadow: 1px 1px 7px;
+    border: 1.8px solid white; 
+    border-left: 0.1px solid white;
+    border-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+    &:hover{
+      box-shadow: 1px 1px 8px white;
     }
-
     span {
       color: #ffff;
     }

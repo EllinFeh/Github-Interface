@@ -37,41 +37,33 @@ const Profile = () => {
                             </a>
                         </S.WrapperUserGeneric>
 
+
                         <S.WrapperUserGeneric>
-                            <h3>Company:</h3>
-                            <span>{githubState.user.company}</span>
-                        </S.WrapperUserGeneric>
-                        <S.WrapperUserGeneric>
-                            <h3>Location:</h3>
+                            <h5>Location:</h5>
                             <span>{githubState.user.location}</span>
-                        </S.WrapperUserGeneric>
-                        <S.WrapperUserGeneric>
-                            <h3>Blog:</h3>
-                            <a href={githubState.user.blog} target="_blank" rel="noreferrer">
-                                {githubState.user.blog}
-                            </a>
                         </S.WrapperUserGeneric>
                     </div>
 
                     <S.WrapperStatusCount>
                         <S.WrapperUserGeneric>
-                            <h4>Followers</h4>
-                            <span> {githubState.user.followers}</span>
+                            <div>
+                                <h4>Followers</h4>
+                                <span> {githubState.user.followers}</span>
+                            </div>
                         </S.WrapperUserGeneric>
 
                         <S.WrapperUserGeneric>
-                            <h4>Followings</h4>
-                            <span> {githubState.user.following}</span>
+                            <div>
+                                <h4>Followings</h4>
+                                <span> {githubState.user.following}</span>
+                            </div>
                         </S.WrapperUserGeneric>
 
                         <S.WrapperUserGeneric>
-                            <h4>Gists</h4>
-                            <span> {githubState.user.public_gists}</span>
-                        </S.WrapperUserGeneric>
-
-                        <S.WrapperUserGeneric>
-                            <h4>Repos</h4>
-                            <span> {githubState.user.public_repos}</span>
+                            <div>
+                                <h4>Repos</h4>
+                                <span>{githubState.user.public_repos}</span>
+                            </div>
                         </S.WrapperUserGeneric>
                     </S.WrapperStatusCount>
                 </S.Wrapper >

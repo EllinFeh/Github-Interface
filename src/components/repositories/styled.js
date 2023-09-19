@@ -3,9 +3,7 @@ import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import { MediaCss } from '../../global/resetCSS';
 
 export const WrapperTabs = styled(Tabs)`
-font-size: 16px;
-width: 100%;
-margin-top: 16px;
+}
 `;
 
 export const WrapperTab = styled(Tab)`
@@ -21,7 +19,7 @@ cursor: pointer;
 
 &:hover{
     transform: skew(-5deg);
-    transition: 500ms;
+    transition: 200ms;
 }
 
 &:focus{
@@ -34,8 +32,9 @@ cursor: pointer;
 
 @media(max-width: ${MediaCss}){
     transform: scale(1.2);
-    margin: 3vw;
-    width: 80vw;
+    margin: 0% 5% 0% 5%;
+    width: 150px;
+    height: 45px;
 }
 
 `;

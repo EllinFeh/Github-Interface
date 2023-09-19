@@ -17,19 +17,26 @@ gap: 25px;
 
 @media (max-width: 550px) {
   margin: 0;
-  gap: 5vw;
+  gap: 5px;
 }
 
 h1{
-  font-size: 22px;
+font-size: 25px;
 display: block;
 font-family: arial;
 font-weight: bold;
 
+@media(max-width: ${MediaCss}){
+  font-size: 20px;
+}
 }
 
 h5{
-  font-size: 12px;
+  font-size: 13.5px;
+}
+
+@media(max-width: ${MediaCss}){
+  font-size: 12.5px;
 }
 `;
 
@@ -39,7 +46,7 @@ display: flex;
 align-items: center;
 text-align: center;
 font-size: 13px;
-gap: 15px;
+gap: 12px;
 
 @media (max-width: ${MediaCss}) {
     display: none;
@@ -56,6 +63,11 @@ height: 100px;
     box-shadow: #0d092e 1px 1px 5px;
     transform: scale(1.08);
     transition: 500ms;
+  }
+
+  @media(max-width: ${MediaCss}){
+    width: 90px;
+    height: 90px;
   }
 `;
 
@@ -81,15 +93,26 @@ export const WrapperUserGeneric = styled.div`
   display: flex;
   align-items: center;
   margin-top: 8px;
+  gap: 5px;
+  span{
+  font-size: 14px;
+  color: #e0d1ff;
+  font-weight: bold;
+  }
 
   h3 {
     margin-right: 8px;
+    
   }
 
   a {
-    font-size: 18px;
-    color: blue;
+    font-size: 14px;
+    color: #e0d1ff;
     font-weight: bold;
+
+    &:hover{
+      color: white;
+    }
   }
 `;
 

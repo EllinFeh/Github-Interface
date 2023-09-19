@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useCallback, useState } from 'react'
 import api from "../services/api";
 
 export const GithubContext = createContext({
@@ -7,8 +7,6 @@ export const GithubContext = createContext({
     repositories: [],
     starred: [],
 });
-
-
 
 const GithubProvider = ({ children }) => {
     const [githubState, setGithubState] = useState({
@@ -20,14 +18,11 @@ const GithubProvider = ({ children }) => {
             id: undefined,
             html_url: undefined,
             name: undefined,
-            company: undefined,
             location: undefined,
 
             followers: 0,
             following: 0,
-            public_gists: 0,
             public_repos: 0,
-
         },
         repositories: [],
         starred: [],
@@ -51,8 +46,6 @@ const GithubProvider = ({ children }) => {
             login: data.login,
             name: data.name,
             html_url: data.html_url,
-            blog: data.blog,
-            company: data.company,
             location: data.location,
             followers: data.followers,
             following: data.following,
@@ -91,7 +84,9 @@ const GithubProvider = ({ children }) => {
 
   const contextValue = {
     githubState,
-    
+    getUser: useCallback((username) => getUser(username), []),
+    getUserRepos: useCallback((username) => getUserRepos(username), []),
+    getUserStarred: useCallback((username) => getUserStarred(username), []),
   };
 
   return (

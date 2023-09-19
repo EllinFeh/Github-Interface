@@ -18,8 +18,7 @@ border: 1.8px solid #ffffff;
 cursor: pointer;
 
 &:hover{
-    transform: skew(-5deg);
-    transition: 200ms;
+    border: 1.8px solid #333333;
 }
 
 &.is-selected {
@@ -52,7 +51,6 @@ export const WrapperTabPanel = styled(TabPanel)`
 margin: 5% 10% 0% 10%;
 border-radius: 10px;
 text-align: center;
-
 `;
 WrapperTabList.tabsRole = "TabPanel";
 

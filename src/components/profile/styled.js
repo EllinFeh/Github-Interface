@@ -25,11 +25,11 @@ font-family: arial;
 font-weight: bold;
 
  @media(max-width: ${MediaCss}){
-  font-size: 40px;
+  font-size: 30px;
 }
 
  @media (max-width: 780px) {
-  font-size: 30px;
+  font-size: 20px;
  }
 }
 

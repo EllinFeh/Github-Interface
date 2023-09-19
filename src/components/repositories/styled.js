@@ -22,19 +22,15 @@ cursor: pointer;
     transition: 200ms;
 }
 
-&:focus{
-    outline:none;
-}
-
 &.is-selected {
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media(max-width: ${MediaCss}){
-    transform: scale(1.2);
-    margin: 0% 5% 0% 5%;
-    width: 150px;
-    height: 45px;
+    transform: scale(2);
+    margin: 15% 10% 0% 10%;
+    width: 20%;
+    height: 45%;
 }
 
 `;

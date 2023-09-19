@@ -12,12 +12,10 @@ gap: 25px;
 
 @media (max-width: ${MediaCss}) {
   margin: 0;
-  gap: 50px;
 }
 
-@media (max-width: 550px) {
-  margin: 0;
-  gap: 5px;
+@media (max-width: 780px) {
+  margin-right: -100px;
 }
 
 h1{
@@ -26,20 +24,33 @@ display: block;
 font-family: arial;
 font-weight: bold;
 
-@media(max-width: ${MediaCss}){
-  font-size: 20px;
+ @media(max-width: ${MediaCss}){
+  font-size: 40px;
 }
+
+ @media (max-width: 780px) {
+  font-size: 30px;
+ }
+}
+
+h4{
+  font-size: 13.5px;
+
+  @media(max-width: ${MediaCss}){
+    font-size: 30px;
+  }
+  @media (max-width: 780px) {
+    font-size: 20px;
+  }
 }
 
 h5{
   font-size: 13.5px;
-}
-
-@media(max-width: ${MediaCss}){
-  font-size: 12.5px;
+  @media(max-width: ${MediaCss}){
+  display: none;
+  }
 }
 `;
-
 
 export const WrapperStatusCount = styled.div`
 display: flex;
@@ -66,8 +77,15 @@ height: 100px;
   }
 
   @media(max-width: ${MediaCss}){
-    width: 90px;
-    height: 90px;
+    width: 170px;
+    height: 170px;
+    margin-left: 80px;   //largura do input com a imagem
+  }
+
+  @media (max-width: 780px) {
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
   }
 `;
 
@@ -83,10 +101,15 @@ align-items: center;
 justify-content: center;
 background: linear-gradient(90deg, rgba(6,29,59,1) 0%, rgba(48,74,159,1) 50%, rgba(74,60,190,1) 100%);
 border-radius: 20px;
-max-height: 110px;
+max-height: 120px;
 max-width: 100vw;
 width: 100vw;
 height: 100vh;
+
+@media (max-width: ${MediaCss}) {
+max-height: 220px;
+max-width: 100vw;
+}
 `;
 
 export const WrapperUserGeneric = styled.div`
@@ -100,9 +123,14 @@ export const WrapperUserGeneric = styled.div`
   font-weight: bold;
   }
 
+  span{
+    @media (max-width: ${MediaCss}) {
+      display: none;
+    }
+  }
+
   h3 {
     margin-right: 8px;
-    
   }
 
   a {
@@ -112,6 +140,14 @@ export const WrapperUserGeneric = styled.div`
 
     &:hover{
       color: white;
+    }
+
+    @media (max-width: ${MediaCss}) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 780px) {
+      font-size: 15px;
     }
   }
 `;

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const MediaCss = "900px";
+export const MediaCss = "1000px";
 export const ResetCSS = createGlobalStyle`
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 

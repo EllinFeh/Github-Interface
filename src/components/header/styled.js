@@ -8,11 +8,11 @@ export const Wrapper = styled.div`
   align-items: flex-start;
 
   @media (max-width: ${MediaCss}) {
-    transform: scale(1.1);
+    transform: scale(1.9);
 }
 
-@media (max-width: 550px) {
-  transform: scale(0.99);
+@media (max-width: 780px) {
+  transform: scale(1);
 }
 
   input {

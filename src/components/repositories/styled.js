@@ -49,21 +49,15 @@ list-style-type: none;
 align-items: center;
 justify-content: center;
 gap: 3%;
-
-
 `;
 WrapperTabList.tabsRole = "TabList";
 
 
 export const WrapperTabPanel = styled(TabPanel)`
-display:none;
 margin: 5% 10% 0% 10%;
 border-radius: 10px;
 text-align: center;
 
-&.is-selected {
-    display: block;
-}
 `;
 WrapperTabList.tabsRole = "TabPanel";
 

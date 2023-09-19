@@ -19,9 +19,9 @@ const Repositories = () => {
   return (
     <>
       {hasUserForSearchrepos ? (
+        
         <S.WrapperTabs SelectedTabClassName="is-selected"
           SelectedTabPanelClassName="is-selected">
-
           <S.WrapperTabList>
             <S.WrapperTab>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
@@ -50,7 +50,7 @@ const Repositories = () => {
           </S.WrapperTabPanel>
 
           <S.WrapperTabPanel>
-           <S.WrapperList>
+           <S.WrapperList> 
               {githubState.starred.map((item) => (
                 <RepositoryItem
                   key={item.id}
@@ -58,6 +58,7 @@ const Repositories = () => {
                   linkToRepo={item.full_name}
                   fullName={item.full_name}
                 />
+                
               ))}
             </S.WrapperList>
           </S.WrapperTabPanel>

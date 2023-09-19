@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MediaCss } from '../../global/resetCSS';
 
 
 export const Wrapper = styled.div` //Todos Itens da navbar
@@ -9,11 +10,22 @@ position: relative;
 color: #ffffff;
 gap: 25px;
 
+@media (max-width: ${MediaCss}) {
+  margin: 0;
+  gap: 50px;
+}
+
+@media (max-width: 550px) {
+  margin: 0;
+  gap: 5vw;
+}
+
 h1{
   font-size: 22px;
 display: block;
 font-family: arial;
 font-weight: bold;
+
 }
 
 h5{
@@ -28,6 +40,11 @@ align-items: center;
 text-align: center;
 font-size: 13px;
 gap: 15px;
+
+@media (max-width: ${MediaCss}) {
+    display: none;
+    margin: 0;
+}
 `;
 
 export const WrapperAvatar = styled.img`
@@ -42,6 +59,11 @@ height: 100px;
   }
 `;
 
+export const WrapperGithub = styled.div`
+@media (max-width: ${MediaCss}) {
+  display: none;
+}
+`;
 
 export const WrapperBackground = styled.div`
 display: flex;

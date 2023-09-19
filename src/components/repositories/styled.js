@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
+import { MediaCss } from '../../global/resetCSS';
 
 export const WrapperTabs = styled(Tabs)`
-
+font-size: 16px;
+width: 100%;
+margin-top: 16px;
 `;
 
 export const WrapperTab = styled(Tab)`
@@ -25,28 +28,32 @@ cursor: pointer;
     outline:none;
 }
 
-&:is-selected{
-    border: 2px solid #ffffff;
-    transform: scale(1.2);
+&.is-selected {
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
 }
+
+@media(max-width: ${MediaCss}){
+    transform: scale(1.2);
+    margin: 3vw;
+    width: 80vw;
+}
+
 `;
+WrapperTab.tabsRole = "Tab";
+
 
 export const WrapperTabList = styled(TabList)`
 margin: 15px;
 display: flex;
+list-style-type: none;
 align-items: center;
 justify-content: center;
 gap: 3%;
 
-&:is-selected{  
-    border: 2px solid;
-    display:block;
-    color: #111111;
-}  
 
 `;
+WrapperTabList.tabsRole = "TabList";
 
-WrapperTabList.tabsRole = "Tab";
 
 export const WrapperTabPanel = styled(TabPanel)`
 display:none;
@@ -56,7 +63,15 @@ text-align: center;
 
 &.is-selected {
     display: block;
-
 }
 `;
 WrapperTabList.tabsRole = "TabPanel";
+
+
+
+export const WrapperList = styled(TabPanel)`
+display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+`;

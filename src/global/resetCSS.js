@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+export const MediaCss = "900px";
 export const ResetCSS = createGlobalStyle`
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
@@ -13,6 +14,8 @@ export const ResetCSS = createGlobalStyle`
   border-style: solid;
   border-width: 0;
 }
+
+
 
 /* Document */
 /* ============================================ */

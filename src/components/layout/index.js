@@ -1,13 +1,10 @@
 import React from 'react'
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
-    <section>
-        <header>
-
-        </header>
-        {children}
-    </section>
+    <>
+      {children}
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-margin: 3%;
+margin: 2em;
 font-size: 25px;
 text-align: center;
 `

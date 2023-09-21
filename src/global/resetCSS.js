@@ -40,7 +40,7 @@ html {
  */
 
 body {
-  background: #111111;
+  background: linear-gradient(90deg, rgba(6,29,59,1) 0%, rgba(48,74,159,1) 50%, rgba(74,60,190,1) 100%);;
   margin: 0;
   color: #ffffff;
   font-family: Roboto, sans-serif;

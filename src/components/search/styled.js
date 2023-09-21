@@ -6,7 +6,7 @@ display: flex;
 margin: -5% 5% 0% 0%;
 
 @media (max-width: ${MediaCss}) {
-  display: none;
+ width: 20%;
 }
 `;
 
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   align-items: flex-start;
 
   @media (max-width: ${MediaCss}) {
-    transform: scale(1.9);
+    transform: scale(1.8);
 }
 
 @media (max-width: 780px) {
@@ -32,18 +32,21 @@ export const Wrapper = styled.div`
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 
-    height: 35px;
-    width: 130px;
+    height: 2.5em;
+    width: 8em;
     padding: 0px 10px 0px 10px;
     font-weight: italic;
-    margin: 0px 2px 0px 0px;
+    margin: 0px 2px 0px 0px;]
+
+   
   }
 
   button {
     background: none;
-    margin: 0 -3px;
-    height: 35px;
-    padding: 4px;
+    margin: 0 -0.2em;
+    padding: 0em 0.5em 0em 0.5em;
+    height: 2.5em;
+  
 
     border: 1.8px solid white; 
     border-left: 0.1px solid white;

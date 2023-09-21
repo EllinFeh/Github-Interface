@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { MediaCss } from "../../global/resetCSS";
 
+export const WrapperGithub = styled.div`
+display: flex;
+margin: -5% 5% 0% 0%;
+
+@media (max-width: ${MediaCss}) {
+  display: none;
+}
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   width: 100%;

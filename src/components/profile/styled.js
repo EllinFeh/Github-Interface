@@ -79,21 +79,19 @@ height: 100px;
   @media(max-width: ${MediaCss}){
     width: 170px;
     height: 170px;
-    margin-left: 80px;   //largura do input com a imagem
   }
 
   @media (max-width: 780px) {
     width: 100px;
     height: 100px;
-    margin-left: 0px;
   }
 `;
 
-export const WrapperGithub = styled.div`
-@media (max-width: ${MediaCss}) {
-  display: none;
-}
-`;
+// export const WrapperGithub = styled.div`
+// @media (max-width: ${MediaCss}) {
+//   display: none;
+// }
+// `;
 
 export const WrapperBackground = styled.div`
 display: flex;

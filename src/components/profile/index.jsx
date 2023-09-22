@@ -5,17 +5,13 @@ import Header from '../search'
 
 
 const Profile = () => {
-
     return (
-
         <>
-
             <S.WrapperBackground>
                 <S.Wrapper>
                     <Header />
                 </S.Wrapper >
             </S.WrapperBackground>
-
         </>
     )
 }

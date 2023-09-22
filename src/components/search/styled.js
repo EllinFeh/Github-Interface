@@ -1,13 +1,8 @@
 import styled from "styled-components";
-import { MediaCss } from "../../global/resetCSS";
 
 export const WrapperGithub = styled.div`
 display: flex;
 margin: -5% 5% 0% 0%;
-
-@media (max-width: ${MediaCss}) {
- width: 20%;
-}
 `;
 
 export const Wrapper = styled.div`
@@ -15,14 +10,6 @@ export const Wrapper = styled.div`
   width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
-
-  @media (max-width: ${MediaCss}) {
-    transform: scale(1.8);
-}
-
-@media (max-width: 780px) {
-  transform: scale(1);
-}
 
   input {
     border: 1.8px solid white; 

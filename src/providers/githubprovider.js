@@ -49,7 +49,6 @@ const GithubProvider = ({ children }) => {
             location: data.location,
             followers: data.followers,
             following: data.following,
-            public_gists: data.public_gists,
             public_repos: data.public_repos,
           },
         }));

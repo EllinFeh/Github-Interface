@@ -4,4 +4,4 @@
 #### Iniciado dia 16/09/23
 #### Finalizado dia 21/09/23
 
-######Finalizado, sem dúvidas adquiri conhecimentos fundamentais em react e até mesmo melhorar as habilidades em JS.
+###### Finalizado, sem dúvidas adquiri conhecimentos fundamentais em react e até mesmo melhorar as habilidades em JS.

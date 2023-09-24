@@ -48,7 +48,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: #171624;
-height: 13vh;
+height: 18vh;
 `;
 
 export const WrapperUserGeneric = styled.div`

@@ -24,7 +24,7 @@ WrapperTabList.tabsRole = "TabList";
 
 export const WrapperTab = styled(Tab)` //estilização dos buttons
   border-radius: 16px;
-  border: 1px solid #ffffff;
+  background-color: #171624;
   padding: 18px;
   width: 10em;
   user-select: none;
@@ -41,15 +41,14 @@ export const WrapperTab = styled(Tab)` //estilização dos buttons
   }
 
   &.is-selected {
-    border: 2px solid #fffff;
-    box-shadow: 1px 1px 10px #ffffff;
+    box-shadow: 2px 2px 10px #171624;
   }
 `;
 WrapperTab.tabsRole = "Tab";
 
 export const WrapperTabPanel = styled(TabPanel)` //container cards
   display: none;
-  margin-top: 2em;
+  margin: 2em 0em 2em 0em;
 
   &.is-selected {
     display: block;
